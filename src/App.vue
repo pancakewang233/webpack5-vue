@@ -1,19 +1,20 @@
 <template>
-  <div class="example">{{ msg }}</div>
+  <h1 class="example">{{ name }}</h1>
 </template>
-
 <script lang="ts">
-export default {
-  data () {
+import { defineComponent } from "vue";
+export default defineComponent({
+  setup() {
+    const name = "Hello Webpack5 Vue3";
     return {
-      msg: 'Hello world!'
-    }
-  }
-}
+      name,
+    };
+  },
+});
 </script>
 
 <style scoped>
-.example {
-  color: red;
+.example{
+  color: blue;
 }
 </style>

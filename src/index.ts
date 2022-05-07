@@ -1,3 +1,5 @@
-import './style.scss';
-import Vue from 'vue-loader';
-import App from '@/App.vue';
+import { createApp } from "vue";
+import App from "@/App.vue";
+import '@/style.css'
+
+createApp(App).mount("#app");
