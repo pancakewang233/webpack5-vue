@@ -1,5 +1,8 @@
 <template>
+<div class="app">
   <h1 class="example">{{ name }}</h1>
+  <img src="../static/nature.jpg" alt="backImg">
+</div>
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
@@ -13,8 +16,14 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.example{
-  color: blue;
+<style scoped lang="scss">
+.app{
+  .example{
+    color: blue;
+  }
+  img{
+    height: 200px;
+    width: 200px;
+  }
 }
 </style>
